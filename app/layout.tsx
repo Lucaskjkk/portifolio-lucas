@@ -7,9 +7,9 @@ import { Analytics } from "./components/analytics";
 export const metadata: Metadata = {
   title: {
     default: "Lucas Balduino",
-    template: "%s | chronark.com",
+    template: "%s | lucasbalduino.com",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Gostaria de me apresentar um pouco com meu portifólio",
   openGraph: {
     title: "Lucas Balduino - Portifólio",
     description:
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "Lucas Balduino",
     card: "summary_large_image",
   },
   icons: {

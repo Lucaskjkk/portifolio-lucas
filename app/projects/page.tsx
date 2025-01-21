@@ -2,47 +2,48 @@ import React from 'react';
 import { Card } from '../components/card';
 import { Navigation } from '../components/nav';
 import Link from 'next/link';
+import { link } from 'node:fs';
 
 
 const projects = [
   {
-    slug: 'contagem_pessoas',
-    title: 'Contador de pessoas (Full Stack)',
-    date: '2022-06-12',
-    description: 'Projeto desenvolvido para controle de entrada de pessoas.',
-    views: 121,
-    language: 'Python',
+    slug: 'https://sistema-erp-frontend-pba5q.ondigitalocean.app/signin',
+    title: 'Micro ERP',
+    date: '2025-01-15',
+    description: 'Sistema criado para facilitar o controle de empresas em geral...    Login: test@test.com  ||  Senha: 123',
+    views: 143,
+    language: 'Reactjs, TypeScript, Python',
     database: 'MySql',
   },
   {
-    slug: 'avaliacao',
-    title: 'Sistema Pesquisa e Satisfação (Full Stack)',
+    slug: 'https://github.com/Lucaskjkk/ModuloAPI',
+    title: 'API CRUD Open-Source  ',
+    date: '2022-06-12',
+    description: 'API desernvolvida para criação, leitura, atualização e exclusão de usuários...',
+    views: 121,
+    language: 'ASP.NET',
+    database: 'MySql',
+  },
+  {
+    slug: 'https://github.com/Lucaskjkk/sistema-ocorrencias',
+    title: 'Sistema de ocorrências diárias',
     date: '2023-09-20',
-    description: 'Sistema desenvolvido para lidar direto com cliente, utilizando Flask.',
+    description: 'Sistema desenvolvido para anotar ocorrências diárias com leitura de dados através de gráficos, utilizando Flask.',
     views: 90,
     language: 'Python',
     database: 'SqlServer',
   },
   {
-    slug: 'calendario',
-    title: 'Sistema de agendamento de eventos (Back-End)',
-    date: '2024-03-15',
-    description: 'Sistema para agendamento e organização de eventos.',
+    slug: 'https://github.com/Lucaskjkk/api-cep',
+    title: 'API de localização de CEP',
+    date: '2024-09-15',
+    description: 'Sistema para localizar endereço de maneira prática',
     views: 150,
-    language: 'Python',
-    database: 'SqlServer',
+    language: '.NET 8.0',
+    database: 'Mysql',
   },
   {
-    slug: 'atendimento',
-    title: 'Sistema para atendimento médico (Full Stack)',
-    date: '2024-11-18',
-    description: 'Sistema criado para Realizar os atendimentos médicos, com cadastro de paciêntes, e controle de ficha médica.',
-    views: 143,
-    language: 'Python',
-    database: 'MySql',
-  },
-  {
-    slug: 'estacionamento',
+    slug: 'https://github.com/Lucaskjkk/sistema_estacionamento',
     title: 'Sistema de Estacionamento (Back-End)',
     date: '2024-10-30',
     description: 'Sistema criado para controle de entrada e saida de carros',
@@ -71,7 +72,7 @@ export default function ProjectsPage() {
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2">
           {projects.map((project) => (
             <Card key={project.slug}>
-              <Link href={`/projects/${project.slug}`}>
+              <Link href={`${project.slug}`}>
                 <article className="relative w-full h-full p-4 md:p-8">
                   <div className="flex items-center justify-between gap-2">
                     <div className="text-xs text-zinc-100">

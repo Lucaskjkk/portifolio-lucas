@@ -11,18 +11,13 @@ export const metadata: Metadata = {
   },
   description: "Co-founder of unkey.dev and founder of planetfall.io",
   openGraph: {
-    title: "chronark.com",
+    title: "Lucas Balduino - Portifólio",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
-    images: [
-      {
-        url: "https://chronark.com/og.png",
-        width: 1920,
-        height: 1080,
-      },
-    ],
+      "Gostaria de me apresentar um pouco com meu portifólio",
+    
+    siteName: "Lucas Balduino",
+
+
     locale: "en-US",
     type: "website",
   },
